@@ -369,6 +369,13 @@ next specification release, v0.2.0, targets March 2027. A v1.0 date has not been
 What is in focus right now lives in one place, the Current Priority Scope in
 [CONTRIBUTING.md](./CONTRIBUTING.md).
 
+## Roadmap
+
+See [`ROADMAP.md`](./ROADMAP.md) for the phased plan — where things stand after
+Release 0.1.5, the security-credibility priorities, the spec items targeted for
+v0.2.0, how we work, and how ACS aligns with existing standards. Dates are targets;
+the plan is maintained by the project leads and evolves with the community.
+
 ## Where to go next
 
 - [AGT reference implementation](reference-implementations/agt/README.md): the deep tutorial behind the walkthrough above, the Guardian, both host shims, and the full limits list.
