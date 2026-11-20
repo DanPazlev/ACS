@@ -121,3 +121,17 @@ updates:
         patterns:
           - "*"
         group-by: dependency-name
+  - package-ecosystem: docker
+    directories: ["/reference-implementations/agt-go"]
+    schedule: { interval: weekly, day: monday }
+    cooldown: { default-days: 7 }
+    groups:
+      docker-minor-patch: { update-types: [minor, patch] }
+    open-pull-requests-limit: 10
+  - package-ecosystem: npm
+    directories: ["/reference-implementations/agt", "/reference-implementations/agt/hosts/claude-code", "/reference-implementations/agt/hosts/opencode", "/reference-implementations/agt/packages/agt-bridge", "/reference-implementations/agt/packages/conformance", "/reference-implementations/agt/packages/guardian", "/reference-implementations/agt/packages/host-adapter", "/reference-implementations/agt/packages/inspector"]
+    schedule: { interval: weekly, day: monday }
+    cooldown: { default-days: 7 }
+    groups:
+      npm-minor-patch: { update-types: [minor, patch] }
+    open-pull-requests-limit: 10
